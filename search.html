@@ -73,8 +73,8 @@
       imageElement.src="images/hole.jpg"
     }
     triesCount++;
-    document.getElementById("tries").innerHTML= "Number of tries is " + ": " + triesCount
-    document.getElementById("distance").innerHTML = "Distance is " + ": " + distance(position, AnimalLocation);
+    document.getElementById("tries").innerHTML= "Number of tries is " + ": " + triesCount;
+    document.getElementById("distance").innerHTML = "Distance is " + ": " + distance(position, animalLocation);
   }
   function distance(pos1,pos2){
     let a =[
@@ -85,16 +85,16 @@
                 ]
             let x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
-            for (let i = 0; i < 6; i++) {
-            for (let j = 0; j < 4; j++)
+            for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 6; j++)
             if (a[i][j] == pos1) {
             x1 = i;
             y1 = j;
             break;
   }
 }
-            for (let i = 0; i < 6; i++) {
-            for (let j = 0; j < 4; j++)
+            for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 6; j++)
             if (a[i][j] == pos2) {
             x2 = i;
             y2 = j;
